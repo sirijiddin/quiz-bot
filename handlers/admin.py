@@ -152,7 +152,7 @@ async def handle_not_document(message: Message):
 PAGE_SIZE = 20
 
 
-def build_questions_text(page: int) -> tuple[str, InlineKeyboardMarkup | None]:
+def build_questions_text(page: int):
     total = get_question_count()
     if total == 0:
         return "Hozircha savollar yo'q.", None
